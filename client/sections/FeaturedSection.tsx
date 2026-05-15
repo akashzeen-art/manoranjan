@@ -3,16 +3,15 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, ChevronLeft, ChevronRight, Star, Clock, Users } from 'lucide-react';
 import { SubscriptionFlow } from './SubscriptionFlow';
-import { getYogaVideo } from './yogaVideos';
-import { getCookVideo } from './cookVideos';
+import { getVideo } from './desiVideos';
 
 const videos = [
-  { id: '1', title: 'Raaz Beyond Fear',         thumbnail: '/landscape_new_desicontent/1.png',  video: getYogaVideo(0),  description: 'A gripping tale of fear, secrets and survival',      rating: '9.8', category: 'Thriller', level: 'Suspense',      duration: '42 min', students: '128K' },
-  { id: '2', title: 'The Hidden Truth',          thumbnail: '/landscape_new_desicontent/2.png',  video: getCookVideo(0),  description: 'Uncover the truth buried deep beneath the surface',   rating: '9.5', category: 'Drama',    level: 'Mystery',       duration: '38 min', students: '94K'  },
-  { id: '3', title: 'Silent Chase',              thumbnail: '/landscape_new_desicontent/3.png',  video: getYogaVideo(1),  description: 'A silent pursuit through the shadows of the city',    rating: '9.6', category: 'Action',   level: 'Thriller',      duration: '45 min', students: '112K' },
-  { id: '4', title: 'The Missing Witness',       thumbnail: '/landscape_new_desicontent/4.png',  video: getCookVideo(1),  description: 'The key witness vanishes — who can be trusted?',      rating: '9.4', category: 'Crime',    level: 'Mystery',       duration: '50 min', students: '76K'  },
-  { id: '5', title: 'The Secret Route Ep 1',     thumbnail: '/landscape_new_desicontent/5.png',  video: getYogaVideo(2),  description: 'Episode 1 of the thrilling secret route saga',        rating: '9.7', category: 'Thriller', level: 'Series',        duration: '35 min', students: '103K' },
-  { id: '6', title: 'The Secret Route Ep 2',     thumbnail: '/landscape_new_desicontent/6.png',  video: getCookVideo(2),  description: 'The route gets darker in this explosive episode',     rating: '9.3', category: 'Thriller', level: 'Series',        duration: '38 min', students: '88K'  },
+  { id: '1', title: 'Raaz Beyond Fear',         thumbnail: '/landscape_new_desicontent/1.png',  video: getVideo(1),  description: 'A gripping tale of fear, secrets and survival',      rating: '9.8', category: 'Thriller', level: 'Suspense', duration: '42 min', students: '128K' },
+  { id: '2', title: 'The Hidden Truth',          thumbnail: '/landscape_new_desicontent/2.png',  video: getVideo(2),  description: 'Uncover the truth buried deep beneath the surface',   rating: '9.5', category: 'Drama',    level: 'Mystery',  duration: '38 min', students: '94K'  },
+  { id: '3', title: 'Silent Chase',              thumbnail: '/landscape_new_desicontent/3.png',  video: getVideo(3),  description: 'A silent pursuit through the shadows of the city',    rating: '9.6', category: 'Action',   level: 'Thriller', duration: '45 min', students: '112K' },
+  { id: '4', title: 'The Missing Witness',       thumbnail: '/landscape_new_desicontent/4.png',  video: getVideo(4),  description: 'The key witness vanishes — who can be trusted?',      rating: '9.4', category: 'Crime',    level: 'Mystery',  duration: '50 min', students: '76K'  },
+  { id: '5', title: 'The Secret Route Ep 1',     thumbnail: '/landscape_new_desicontent/5.png',  video: getVideo(5),  description: 'Episode 1 of the thrilling secret route saga',        rating: '9.7', category: 'Thriller', level: 'Series',   duration: '35 min', students: '103K' },
+  { id: '6', title: 'The Secret Route Ep 2',     thumbnail: '/landscape_new_desicontent/6.png',  video: getVideo(6),  description: 'The route gets darker in this explosive episode',     rating: '9.3', category: 'Thriller', level: 'Series',   duration: '38 min', students: '88K'  },
 ];
 
 const catColors: Record<string, string> = {

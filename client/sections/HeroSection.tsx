@@ -101,11 +101,11 @@ export function HeroSection({ onEnter }: HeroSectionProps) {
             whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.96 }}>
             <Play size={15} className="fill-black" /> Start Watching
           </motion.button>
-          <motion.button onClick={onEnter}
+          {/* <motion.button onClick={onEnter}
             className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-4 border border-white/30 text-white font-orbitron font-bold uppercase text-sm rounded-sm min-h-[52px] backdrop-blur-sm"
             whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.96 }}>
             <ChevronDown size={15} /> Explore
-          </motion.button>
+          </motion.button> */}
         </motion.div>
       </div>
 

@@ -53,7 +53,7 @@ export function FooterSection() {
             transition={{ duration: 0.7 }} viewport={{ once: true }}
           >
             {/* Logo */}
-            <img
+            {/* <img
               src="/logo.png"
               alt="MANORANJAN"
               className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
@@ -61,7 +61,7 @@ export function FooterSection() {
                 // fallback if logo.png doesn't exist
                 (e.target as HTMLImageElement).style.display = 'none';
               }}
-            />
+            /> */}
 
             {/* Tagline */}
             <p className="text-gray-400 text-sm sm:text-base max-w-xs leading-relaxed">

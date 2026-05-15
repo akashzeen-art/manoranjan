@@ -27,16 +27,15 @@ export function FooterSection() {
 
         {/* Brand over banner */}
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
-          <motion.h2
-            className="font-bebas font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-orange-400 to-amber-400 select-none"
-            style={{ fontSize: 'clamp(3rem, 14vw, 7rem)' }}
+          <motion.img
+            src="/logo.png"
+            alt="Manoranjan"
+            className="h-20 sm:h-28 md:h-36 w-auto object-contain select-none"
             initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }} viewport={{ once: true }}
-          >
-            MANORANJAN
-          </motion.h2>
+          />
           <motion.p
-            className="text-gray-300 text-xs sm:text-sm font-orbitron uppercase tracking-[0.3em] mt-1"
+            className="text-gray-300 text-xs sm:text-sm font-orbitron uppercase tracking-[0.3em] mt-3"
             initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }} viewport={{ once: true }}
           >

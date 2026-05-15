@@ -47,13 +47,16 @@ export function BurgerMenu() {
             >
               <button
                 onClick={() => setOpen(false)}
-                className="self-end mb-10 text-gray-400 hover:text-white transition-colors"
+                className="self-end mb-6 text-gray-400 hover:text-white transition-colors"
                 aria-label="Close menu"
               >
                 <X size={22} />
               </button>
 
-              {/* <p className="text-[9px] font-orbitron uppercase tracking-[0.4em] text-emerald-500 mb-6">Navigation</p> */}
+              {/* Logo */}
+              <div className="flex justify-center mb-8">
+                <img src="/logo.png" alt="Manoranjan" className="h-14 w-auto object-contain" />
+              </div>
 
               <nav className="flex flex-col gap-1">
                 {LINKS.map((link) => (

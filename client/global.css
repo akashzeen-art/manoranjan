@@ -1,0 +1,163 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    /* Futuristic Neon Theme */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 95%;
+
+    --card: 240 10% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 240 10% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 280 100% 55%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 200 100% 50%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 240 10% 25%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 300 100% 55%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 10% 15%;
+    --input: 240 10% 12%;
+    --ring: 280 100% 55%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 10% 5%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 280 100% 55%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 200 100% 50%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 240 10% 15%;
+    --sidebar-ring: 280 100% 55%;
+
+    /* Neon glow colors */
+    --neon-purple: 280 100% 55%;
+    --neon-blue: 200 100% 50%;
+    --neon-pink: 320 100% 55%;
+    --neon-cyan: 180 100% 50%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 95%;
+
+    --card: 240 10% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 240 10% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 280 100% 55%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 200 100% 50%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 240 10% 25%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 300 100% 55%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 10% 15%;
+    --input: 240 10% 12%;
+    --ring: 280 100% 55%;
+    --sidebar-background: 240 10% 5%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 280 100% 55%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 200 100% 50%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 240 10% 15%;
+    --sidebar-ring: 280 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(135deg, #0a0e27 0%, #1a0a3a 100%);
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, hsl(var(--primary)), hsl(var(--secondary)));
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, hsl(var(--accent)), hsl(var(--primary)));
+  }
+
+  :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  pre,
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
+
+  /* Cinematic Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', 'Orbitron', sans-serif;
+    letter-spacing: 0.05em;
+  }
+
+  /* Glow effects for interactive elements */
+  button, [role="button"], a {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* Selection styling */
+  ::selection {
+    background: hsl(var(--primary) / 0.3);
+    color: hsl(var(--foreground));
+  }
+}

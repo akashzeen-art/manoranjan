@@ -23,10 +23,15 @@ export function BurgerMenu() {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="fixed top-5 right-5 z-[100] w-10 h-10 flex items-center justify-center rounded-full bg-black/60 backdrop-blur-sm border border-white/10 text-white hover:border-emerald-500/50 transition-colors"
+        className="fixed top-0 left-0 right-0 z-[100] w-full flex items-center justify-between px-4 sm:px-6 py-3 bg-black/70 backdrop-blur-md border-b border-white/10"
         aria-label="Open menu"
       >
-        <Menu size={18} />
+        {/* Logo */}
+        <img src="/logo.png" alt="Manoranjan" className="h-9 sm:h-11 w-auto object-contain" />
+        {/* Hamburger */}
+        <div className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 border border-white/15 text-white">
+          <Menu size={18} />
+        </div>
       </button>
 
       <AnimatePresence>
@@ -54,9 +59,9 @@ export function BurgerMenu() {
               </button>
 
               {/* Logo */}
-              <div className="flex justify-center mb-8">
+              {/* <div className="flex justify-center mb-8">
                 <img src="/logo.png" alt="Manoranjan" className="h-14 w-auto object-contain" />
-              </div>
+              </div> */}
 
               <nav className="flex flex-col gap-1">
                 {LINKS.map((link) => (

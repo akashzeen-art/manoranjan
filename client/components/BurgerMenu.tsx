@@ -27,7 +27,7 @@ export function BurgerMenu() {
         aria-label="Open menu"
       >
         {/* Logo */}
-        <img src="/logo.png" alt="Manoranjan" className="h-9 sm:h-11 w-auto object-contain" />
+        <img src="/logo.png" alt="Bharat+" className="h-9 sm:h-11 w-auto object-contain" />
         {/* Hamburger */}
         <div className="w-9 h-9 flex items-center justify-center rounded-full bg-white/10 border border-white/15 text-white">
           <Menu size={18} />
@@ -60,7 +60,7 @@ export function BurgerMenu() {
 
               {/* Logo */}
               {/* <div className="flex justify-center mb-8">
-                <img src="/logo.png" alt="Manoranjan" className="h-14 w-auto object-contain" />
+                <img src="/logo.png" alt="Bharat+" className="h-14 w-auto object-contain" />
               </div> */}
 
               <nav className="flex flex-col gap-1">

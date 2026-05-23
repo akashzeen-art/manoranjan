@@ -6,8 +6,8 @@ import { X } from 'lucide-react';
 import { FooterSection } from '@/sections/FooterSection';
 import { BurgerMenu } from '@/components/BurgerMenu';
 
-const LS_MOBILE = 'MANORANJAN_mobile';
-const LS_PLAN   = 'MANORANJAN_plan';
+const LS_MOBILE = 'Bharat+_mobile';
+const LS_PLAN   = 'Bharat+_plan';
 
 const PLANS = [
   { id: 'monthly',   label: 'Monthly',   price: '₹159', original: '₹318', discount: '50% OFF', desc: 'Unlimited Videos & Web Series' },

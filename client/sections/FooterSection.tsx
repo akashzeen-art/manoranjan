@@ -1,4 +1,4 @@
-// FooterSection — MANORANJAN / EatMe style footer
+// FooterSection — Bharat+ / EatMe style footer
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -29,7 +29,7 @@ export function FooterSection() {
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
           <motion.img
             src="/logo.png"
-            alt="Manoranjan"
+            alt="Bharat+"
             className="h-20 sm:h-28 md:h-36 w-auto object-contain select-none"
             initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }} viewport={{ once: true }}
@@ -55,7 +55,7 @@ export function FooterSection() {
             {/* Logo */}
             {/* <img
               src="/logo.png"
-              alt="MANORANJAN"
+              alt="Bharat+"
               className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
               onError={(e) => {
                 // fallback if logo.png doesn't exist

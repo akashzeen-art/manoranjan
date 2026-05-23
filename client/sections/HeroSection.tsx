@@ -1,4 +1,4 @@
-// Hero Section — MANORANJAN: Yoga & Cooking Platform
+// Hero Section — Bharat+: Yoga & Cooking Platform
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Play, ChevronDown } from 'lucide-react';
@@ -81,7 +81,7 @@ export function HeroSection({ onEnter }: HeroSectionProps) {
               ],
             }}
             transition={{ duration: 0.12, repeat: Infinity, repeatDelay: 5 }}>
-            MANORANJAN
+            Bharat+
           </motion.span>
         </motion.h1>
 

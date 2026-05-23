@@ -33,8 +33,8 @@ const PLANS = [
   },
 ];
 
-const LS_MOBILE = 'MANORANJAN_mobile';
-const LS_PLAN   = 'MANORANJAN_plan';
+const LS_MOBILE = 'Bharat+_mobile';
+const LS_PLAN   = 'Bharat+_plan';
 
 export function SubscriptionFlow({ videoUrl, title, thumbnail, onClose }: SubscriptionFlowProps) {
   const [step, setStep] = useState<Step>('mobile');

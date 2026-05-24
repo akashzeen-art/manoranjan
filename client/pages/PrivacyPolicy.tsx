@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
 
         <p className="text-gray-300 leading-relaxed mb-4">
           This Privacy Policy describes how Zeen Digital Solutions LLP ("we", "us", or "our") collects, uses, discloses, and protects your personal information when you visit or make a purchase from{' '}
-          <a href="https://Bharat+.online" className="text-emerald-400 hover:underline">https://Bharat+.online</a> (the "Site") or use any of our services (collectively, the "Services").
+          <a href="https://bharatplus.online" className="text-emerald-400 hover:underline">https://bharatplus.online</a> (the "Site") or use any of our services (collectively, the "Services").
         </p>
         <p className="text-gray-300 leading-relaxed mb-10">
           By using our Services, you agree to the collection and use of information as outlined in this Privacy Policy. If you do not agree, please do not use the Services.

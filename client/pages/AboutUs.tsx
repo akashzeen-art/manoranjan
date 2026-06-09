@@ -60,9 +60,10 @@ export default function AboutUs() {
           <h2 className="font-bebas text-4xl text-white mb-8 tracking-wide">Company Details</h2>
           <div className="space-y-5">
             <DetailRow label="Registered Name" value="Zeen Digital Solutions LLP" />
-            <DetailRow label="Address" value="Basement, 9/28, Link Road, Bhatnagar Namkeens, Old Faridabad, Faridabad, Haryana, 121002" />
+            <DetailRow label="Address" value="418, 4th Floor SPAZE I Tech park,
+Sohna road Sector 49, Gurugram, Haryana, 122018" />
             <DetailRow label="Phone">
-              <a href="tel:+919667687077" className="text-emerald-400 hover:underline">+91 9667687077</a>
+              <a href="tel:+918929836907‬" className="text-emerald-400 hover:underline">+91 8929836907‬</a>
             </DetailRow>
           </div>
         </div>

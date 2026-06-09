@@ -33,14 +33,15 @@ export default function ContactUs() {
 
           <ContactRow icon="🏢" label="Company" value="Zeen Digital Solutions LLP" />
           <div className="border-t border-white/5" />
-          <ContactRow icon="📍" label="Address" value="Sector 49, Gurugram, Haryana, 122018" />
+          <ContactRow icon="📍" label="Address" value="418, 4th Floor SPAZE I Tech park,
+Sohna road Sector 49, Gurugram, Haryana, 122018" />
           <div className="border-t border-white/5" />
           <ContactRow icon="📞" label="Phone">
             <a href="tel:+918929836907" className="text-emerald-400 hover:underline">+91 8929836907</a>
           </ContactRow>
           <div className="border-t border-white/5" />
           <ContactRow icon="✉️" label="Email">
-            <a href="mailto:marketing@zeendigital.world" className="text-emerald-400 hover:underline">marketing@zeendigital.world</a>
+            <a href="mailto:reetesh.kumar@zeendigital.com" className="text-emerald-400 hover:underline">reetesh.kumar@zeendigital.com</a>
           </ContactRow>
           <div className="border-t border-white/5" />
 
@@ -64,8 +65,8 @@ export default function ContactUs() {
             <p className="text-white font-semibold text-sm mb-1">Need faster support?</p>
             <p className="text-gray-400 text-sm leading-relaxed">
               Email us at{' '}
-              <a href="mailto:marketing@zeendigital.world" className="text-emerald-400 hover:underline">
-                marketing@zeendigital.world
+              <a href="mailto:reetesh.kumar@zeendigital.com" className="text-emerald-400 hover:underline">
+                reetesh.kumar@zeendigital.com
               </a>{' '}
               for the quickest response.
             </p>
